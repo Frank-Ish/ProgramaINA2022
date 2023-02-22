@@ -1,0 +1,47 @@
+#nav {
+    background-color: rgb(110, 110, 187);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#nav li {
+    display: inline;
+    margin: 0;
+    padding: 0 0.5em;
+    border-right: 1px solid;
+}
+
+#nav li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    background-color: blue;
+}
+
+.parrafo {
+    background-color: bisque;
+}
+
+.error {
+    color: red;
+}
+
+.error.destacado {
+    color: blue;
+}
+
+.destacado {
+    font-size: 15px;
+}
+
+.especial {
+    font-weight: bold;
+}
+
+div.aviso span.especial {
+    background-color: blueviolet;
+    color: white;
+}

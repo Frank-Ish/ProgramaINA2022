@@ -1,0 +1,8 @@
+.input {
+    display: inline-flex;
+}
+
+.input label {
+    width: 80px;
+}
+

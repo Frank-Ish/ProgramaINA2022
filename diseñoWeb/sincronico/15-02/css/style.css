@@ -1,3 +1,8 @@
+/* regla: selector, cuerpo */
+/* propiedades y sus valores */
+/* selector: indica a quien se le va aplicar el formato o regla */
+/* tipos de selectores: universal, etiquetas, clase, id, ordenados por especificidad */
+
 h2 {
     color: aquamarine;
     background-color: rgb(18, 106, 239);

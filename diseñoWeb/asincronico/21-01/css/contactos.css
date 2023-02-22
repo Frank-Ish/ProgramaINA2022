@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(126, 188, 207);
+    margin: 0;
+    min-width: 720px;
+    color: gray;
+}
+
+.container {
+    background-color: aliceblue;
+    width: 40%;
+    padding: 1px;
+    position: absolute;
+    top: 5%;
+    left: 32%;
+    border-radius: 4px;
+    box-shadow:0 0 50px rgba(7, 7, 7, 0.548);
+}
+
+.container input {
+    width: 80%;
+    padding: 0.8em;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    border: none;
+    background: none;
+    outline: 0;
+    border-bottom: 2px solid grey;
+}
+
+h1 {
+    width: 30%;
+    border-bottom: solid 2px grey;
+}
+h1, label{
+    width: 60%;
+    padding: auto;
+    padding-right: 5%;
+    margin: auto;
+    margin-left: 5%;
+}
+
+
+.boton {
+    position: relative;
+    left: 60%;
+    margin-bottom: 5%;
+}

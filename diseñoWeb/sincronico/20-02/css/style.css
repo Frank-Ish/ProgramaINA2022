@@ -1,0 +1,129 @@
+/* Globales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;/*ESTO ES UN HACK QUE HACE QUE UN REM SEA IGUA A 10PX*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    background-color: rgb(234, 236, 236);
+}
+
+/* Utilidades */
+
+.pos-inline {
+    display: inline;
+}
+
+.pos-block {
+    display: block;
+}
+
+.img-icon {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100%;
+}
+
+/* Nav */  
+.nav {
+    background-color: white;
+    height: 1%;
+    width: 100%;
+    padding: 1rem;
+    margin: 0%;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    width: 50rem;
+    position: absolute;
+}
+
+.logo h1 {
+    color: blue;
+    text-align: center;
+}
+
+.input-search {
+    background-color: blue;
+    max-width: 40rem;
+    position: relative;
+    left: 35%;
+    
+}
+.input-search input {
+    width: 60rem;
+    border-radius: 2rem;
+}
+
+.nav-list {
+    position: absolute;
+    right: 1%;
+}
+
+/* Historias */
+.history-img {
+    width: 10rem;
+    padding: 0.2rem;
+    border-radius: 1.2rem;
+    height: 15rem;
+    position: relative;
+    top: 5rem;
+}
+
+/* Sidebars */
+
+.sidebar-left, .sidebar-right {
+    position: absolute;
+    top: 6rem;
+    height: 120rem;
+    width: 20rem;
+}
+
+.sidebar-left {
+    background-color: white;
+}
+
+.sidebar-right {
+    right: 2rem;
+    padding-left: 5rem;
+}
+
+.sidebar-img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+}
+
+.sidebar-img-pupli {
+    height: 8rem;
+    width: 8rem;
+}
+/* History - Main - Post */
+
+.history, .main {
+    position: relative;
+    left: 35%;
+}
+
+.main {
+    
+}
+.post {
+    background-color: white;
+    width: 60rem;
+    top: 10rem;
+}
+
+.post input {
+    width: 55rem;
+    border-radius: 2rem;
+}
+.post-img-perfil {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 100%;
+}

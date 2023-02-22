@@ -1,0 +1,19 @@
+header {
+    background-color: antiquewhite;
+    width: 30%;
+    height: 15%;
+}
+
+nav {
+    background-color: aqua;
+    width: 30%;
+    height: 15;
+}
+
+section {
+    background-color: aquamarine;
+}
+
+article {
+    background-color: burlywood;
+}
