@@ -10,6 +10,8 @@ import { CharacterCardService } from 'src/app/shared/services/character-card.ser
 })
 export class DetallePersonajesComponent implements OnInit {
 
+  i:number = 0;
+
   displayedColumns: string[] = [
     "id",
     "name",
@@ -24,15 +26,17 @@ export class DetallePersonajesComponent implements OnInit {
   ];
   dataSource = [];
 
-  personaje: DetalleCharacterModel;
+  personajes: DetalleCharacterModel;
+  
   constructor(route: ActivatedRoute, srv: CharacterCardService) {
     const id = route.snapshot.paramMap.get('id');
 
     srv.getPersonajeById(id).subscribe((result: any) => {
       this.dataSource = result;
       console.log(this.dataSource)
-      this.personaje = result;
+      this.personajes = result;
       // console.log(this.personaje);
+      return this.personajes
     });
   }
 

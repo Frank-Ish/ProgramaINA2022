@@ -1,4 +1,4 @@
-<div class="row">
+<!--<div class="row">
     <div class="col-12" *ngIf="personaje.id">
         <div class="card" style="width: 18rem;">
             <img src="{{ personaje.image}}" class="card-img-top" alt="...">
@@ -10,10 +10,23 @@
                     <li>Type: {{ personaje.type }} </li>
                     <li>Gender: {{ personaje.gender }} </li>
                     <li>Date: {{ personaje.created | date:'short' }} </li>
-                    <!-- <li>Date: {{ personaje.episode }} </li> -->
+                    <li>Date: {{ personaje.episode }} </li> 
                 </ul>
             </div>
         </div>
     </div>
 
+</div>-->
+
+<div class="mat-elevation-z8">
+    <table>
+        <th>#</th>
+        <th>Lista de episodios</th>
+        <tr *ngFor="let epi of personajes?.episode; let i = index">
+            <td>{{i}}</td>
+            <td>{{ epi }}</td>
+        </tr>
+    </table>
 </div>
+
+
