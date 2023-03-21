@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DetalleCharacterModel } from 'src/app/shared/models/detalleCharacterModel';
 import { CharacterCardService } from 'src/app/shared/services/character-card.service';
+import { EpisodeTableService } from '../../../shared/services/Episode-table.service';
 
 @Component({
   selector: 'app-detalle-personajes',
@@ -26,21 +27,29 @@ export class DetallePersonajesComponent implements OnInit {
   ];
   dataSource = [];
 
-  personajes: DetalleCharacterModel;
+  personaje: DetalleCharacterModel;
   
-  constructor(route: ActivatedRoute, srv: CharacterCardService) {
+  constructor(route: ActivatedRoute, srv: CharacterCardService, private srvEpisode: EpisodeTableService) {
     const id = route.snapshot.paramMap.get('id');
 
     srv.getPersonajeById(id).subscribe((result: any) => {
       this.dataSource = result;
       console.log(this.dataSource)
-      this.personajes = result;
+      this.personaje = result;
       // console.log(this.personaje);
-      return this.personajes
+      return this.personaje
     });
+
+
+  }
+
+  irEpisodio(epi:string):void{
+    this.srvEpisode.setUrlEpisode
   }
 
   ngOnInit(): void {
 
   }
+
+
 }

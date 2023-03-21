@@ -1,4 +1,4 @@
-<!--<div class="row">
+<div class="row">
     <div class="col-12" *ngIf="personaje.id">
         <div class="card" style="width: 18rem;">
             <img src="{{ personaje.image}}" class="card-img-top" alt="...">
@@ -16,15 +16,19 @@
         </div>
     </div>
 
-</div>-->
+</div>
 
 <div class="mat-elevation-z8">
     <table>
         <th>#</th>
         <th>Lista de episodios</th>
-        <tr *ngFor="let epi of personajes?.episode; let i = index">
+        <th>Detalle</th>
+        <tr *ngFor="let epi of personaje?.episode; let i = index">
             <td>{{i}}</td>
             <td>{{ epi }}</td>
+            <button (click)="irEpisodio(epi)">
+                Detalle
+            </button>
         </tr>
     </table>
 </div>

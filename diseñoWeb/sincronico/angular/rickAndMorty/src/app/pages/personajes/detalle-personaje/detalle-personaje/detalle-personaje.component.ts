@@ -18,6 +18,8 @@ export class DetallePersonajeComponent implements OnInit {
 
     srv.getPersonajesById(id).subscribe((per:any) =>{
       this.personaje = result;
+      const {episode} = result;
+      
 
       console.log(this.personaje);
     })

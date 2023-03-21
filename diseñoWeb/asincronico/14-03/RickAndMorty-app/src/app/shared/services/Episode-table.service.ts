@@ -8,6 +8,8 @@ import { EpisodeModel } from '../models/episodeModel';
 })
 export class EpisodeTableService {
 
+  private urlEpisode:string;
+
   constructor(private http: HttpClient) { }
 
   getEpisode(url: string): Observable<any> {
@@ -18,5 +20,13 @@ export class EpisodeTableService {
     return this.http.get<EpisodeModel>(
       'https://rickandmortyapi.com/api/episode/' + id
     );
+  }
+
+  setUrlEpisode(url:string): void{
+    this.urlEpisode=url;
+  }
+
+  getUrlEpisode(): string{
+    return this.urlEpisode;
   }
 }
